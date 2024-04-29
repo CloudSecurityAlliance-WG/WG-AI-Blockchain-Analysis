@@ -1,0 +1,15 @@
+You
+Can you look at https://nesa.ai/ and explore the website and tell me what they do?
+
+ChatGPT
+Nesa operates as a Layer-1 blockchain specifically designed for AI applications, aiming to enable transparent and trustworthy AI computations on a decentralized network. The platform supports AI integration through applications, protocols, and smart contracts, making it particularly suitable for tasks requiring high levels of privacy, security, and trust​ (Nesa)​​ (Introduction to Nesa | Nesa)​.
+
+A significant aspect of Nesa's offering is its decentralized inference system, which forms the core of its autonomous AI oracle network. This setup allows AI computations to be performed reliably and transparently across the network, with a commitment to maintaining user privacy and data security. The process is managed through a series of smart contracts responsible for verification and aggregation of AI computation results, ensuring integrity and preventing dishonest behavior among nodes​ (Introduction to Nesa | Nesa)​.
+
+Nesa's approach includes the use of advanced technologies such as Zero-Knowledge Proofs (ZKP) and Split Learning to ensure that data privacy is upheld while executing AI models on-chain​ (Introduction to Nesa | Nesa)​. Additionally, the platform has pioneered a model-agnostic hybrid sharding mechanism that significantly reduces the cost and technical barriers for participants engaging in AI model inference​ (Nesa)​.
+
+In terms of applications, Nesa has developed DNA X, a decentralized application (dApp) on its network that allows users to create, interact with, and monetize digital personalities minted as unique NFTs. These personalities can evolve and interact in a highly realistic manner, providing users with a new form of digital identity and ownership​ (Introduction to Nesa | Nesa)​.
+
+Overall, Nesa's innovative blend of blockchain technology with advanced AI capabilities offers a robust platform for decentralized AI applications, aiming to democratize access to AI technology and enhance the reliability and security of AI operations across the web.
+
+
