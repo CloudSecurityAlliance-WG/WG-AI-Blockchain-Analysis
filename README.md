@@ -13,8 +13,15 @@ https://chat.openai.com/g/g-Y1eGYxuog-csa-technical-business-analyst-for-ai-bloc
 
 prompts/CSA Technical Business Analyst for AI-Blockchain/
 
-## Sitres
+## Sites
 
 * deepbrainchain.org
 * matrix.io
 * nesa.ai
+
+## Workflow Ideas
+
+* Gathering a list of vendors
+* Gathering a list of technologies (like BLockchain, ZKP, TEE, etc.)
+* First pass analysis, what is this?
+* Comparision / cross referencing, use cases, etc.
