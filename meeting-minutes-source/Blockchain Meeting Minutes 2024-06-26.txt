@@ -1,0 +1,668 @@
+ Blockchain Working Group
+Metadata
+
+Title: Blockchain Working Group
+Location: Zoom
+Date: 2024-06-26T17:00:43Z UTC
+
+MeetGeek Transcript
+
+Unknown speaker - 00:06
+This meeting is being recorded.
+See, I'll just give everybody about three or four more minutes to join.
+
+Speaker 01 - 01:41
+Thank you.
+All right, so like I said, about two more minutes and we'll start the meeting.
+Just so everybody knows, Hillary's away today, so I'll be driving.
+I don't have any CSA announcements or anything.
+She usually does those and I'm blissfully unaware of the goings on.
+you
+I've also put the link to the sort of business analysis chatbot in chat.
+
+Speaker 01 - 03:50
+If anybody wants to go look at it or play with it, that's largely what we're going to be using today.
+I
+will just give one more minute.
+Everybody's here.
+It's always weird to me that these AI bots join at different times.
+I don't know what the announcements are, so I guess we'll just get straight into the meeting.
+So in case anybody new is here, the idea here is this working group is using AI to help analyze Different startups and vendor solutions and companies that are while claiming to have solutions or products or services in the AI and blockchain space.
+
+Speaker 01 - 04:51
+And there's actually quite a few of them.
+And obviously, some of them are legit.
+And some of them, as we discovered in the last meeting, are pretty darn scammy looking, let's just say.
+For example, things you know, where they did a A token offering years ago and they've just sort of kept pivoting on to whatever the newest hottest technology is, you know, to try and keep the dream alive.
+And so, for example, something we realized from the last meeting, it wasn't like a broken pricing if they have their own token, you know, is a good indicator, for example, of if they're a scam or not.
+And so, oh, geez, sorry.
+I'm just gonna keep hitting admit.
+
+Speaker 01 - 05:37
+And hopefully this stops because it goes digging pretty loud.
+Where's my train of thought?
+So yeah, so as part of this, I've been using AI a lot, chatgpt, quad and gemini.
+And so we built, I built a, well, a GPT to help us do this.
+And I used ChatGPT for one simple reason, which is it can access the web natively.
+Claude doesn't yet do that, which makes me sad because it would be so much better if it did.
+But if we go here, my GPTs, you can see... There we go.
+
+Speaker 01 - 06:19
+is This one.
+Here we go.
+So it's a very simple chatbot, right?
+Most chatbots are pretty simple.
+They're basically, you know, you got the instructions, which is basically be a business analyst, and potentially data, you know, that you can upload.
+In this case, we're using it mostly to kind of surf the web and browse the web, and do, well, business and technical analysis.
+And so like I said, part of the goal is to kind of come up with like, what are the parameters or the dimensions to look at any solutions.
+
+Speaker 01 - 06:59
+So with that, does anybody kind of want to, sorry, does anybody kind of want to go straight to maybe doing a bit of a hands on demo of this?
+Or does anybody have any things from the last meeting that they want to bring up?
+
+Speaker 02 - 07:18
+I'm going with a demo, Kurt.
+
+Speaker 01 - 07:30
+Okay, let's know the votes.
+So like I said, well, let's just actually just go straight all the way into it.
+Oh, and if you are interested in the The prompts are in the GitHub repo, which is public.
+It drives me nuts that people treat these like prompts, like they're some sort of secret special sauce, when it's literally stuff like, sorry, when it's literally stuff like, you know, be helpful, tell the user about, you know, blah blah, don't, you know, don't confabulate or lie, things like
+that, right?
+So part of the goal here I think was long term was to essentially understand kind of how people do this business analysis so that we can automate it.
+And just hang on a second.
+
+Speaker 01 - 08:14
+I'm just going to boot a couple of these extra order things that don't need to be here.
+I don't know why these people's order pilot have joined three times.
+Actually, I'm going to just start blocking them because they're getting very annoying.
+They keep joining multiple times.
+Yeah, I'm just going to remove Yeah.
+So, um, okay, so back to the demo.
+So we've got the CSA Technical Business Analyst for AI Blockchain.
+
+Speaker 01 - 08:46
+So, well, let's just go all the way crazy.
+Can you do a web search to find five new AI blockchain startups that are security related?
+And list the company name and the group description of what they do.
+And also I point out, this is why I'm not using Google search anymore.
+This is so much better.
+See,
+yeah.
+
+Speaker 01 - 09:26
+Um, so here we go.
+Fireblock, secure digital asset storage, transfer and issuance for financial institutions.
+Okay, not super interesting.
+Because we're hopefully going to get some more AI related stuff.
+Yeah, sorry.
+Sorry,
+let me just get these.
+
+Speaker 01 - 09:52
+Okay, so here we go.
+Number two is missed in labs, developing tools to make web3 more reliable and secure, blah, blah cryptocurrency.
+
+Speaker 03 - 10:00
+Okay, interesting.
+
+Speaker 01 - 10:03
+Um, okay, I think my query wasn't great.
+Okay, let's refine the prompt a little bit.
+Can you find new blockchain startups focusing on AI security related services and
+And as you can see, this is kind of a work in progress because, well, we're all sort of learning as we go, right?
+There
+we go.
+Okay, interesting.
+
+Speaker 01 - 10:46
+It is really not finding anything AI related, which last week when I tried this, it was course working.
+Okay,
+let's re-try that.
+Find me a company using Blockchain to secure AI.
+Alright, I need to learn to someday.
+Aha, here we go.
+There we go.
+
+Speaker 01 - 11:29
+Okay, this is looking better.
+Okay, perfect.
+Okay.
+So I'm just gonna scroll up a little bit so we can actually I'll just make this a bit bigger.
+There we go.
+So everybody can see them.
+Um, does anybody have one that they want to look at specifically?
+
+Multiple speakers - 11:53
+Absolutely, Kurt.
+
+Speaker 02 - 11:56
+The one I want to look at is BurstIQ and I actually know that team in Denver.
+
+Speaker 01 - 12:02
+Okay, perfect.
+I'm just going to load their webpage to take a quick look as a human because I know.
+Actually, you know what?
+No, no, no.
+Let's take the human out of the loop.
+Let's do this all with AI today.
+Okay, so, okay.
+
+Speaker 01 - 12:14
+Can you tell me briefly what BurstIQ is or what's their value at?
+What's their technical if they have one?
+See
+because the thing to remember is once we kind of get once you get better at this kind of thing you can basically well largely automate it like I currently have a thing grinding out 670 exam questions with the Validating them along 16 dimensions of various properties that we look for and then also
+validating the exam questions like as if it was a test taker you know to make sure that it actually works and obviously you know having the AI do that in an automated fashion saves the CSA you know literally hundreds hours work and so perfect example here is you can basically like one of my goals is
+to literally come up with a series prompts and maybe some scripts or something but basically where I either give it a concept of like what I want to research or a specific company and have it, you know, do that tens or hundreds of hours of human equivalent work to figure out if it's any good or
+useful, you know.
+
+Speaker 01 - 13:32
+So looking at this, first IQ is a healthcare technology company leveraging blockchain and AI to do data security management.
+Okay, cool.
+What first does, life graph, Fully compliant, course, with HIPAA and GDPR.
+Here we go.
+It actually sort of got their technical mode.
+Interesting.
+Oh, and one thing to remember too is, of course, the AI could be completely lying and making this up.
+
+Speaker 01 - 14:02
+And so that's kind of another step is to actually then validate it manually right now.
+But longer term is, for example, Well one thing I've been doing kind of an adversarial AI system where you basically have AI number one generate the data and then you have AI number two you know kind of validate it that it's correct and kind of you know essentially make sure it's not making stuff up
+or lying which is again what we do with exam questions and for example you know fails about 10% of our exam questions they're just not good enough or they're you know based on content that's unclear or not even there which is weird but it happens.
+So, looking at this, this reads plausibly like decentralized immutable ledger for healthcare data, yada yada, AI capabilities, decision-making... Okay, so it sounds like the AI is maybe being used for more data analysis than data protection, and so let's ask it that.
+Is the AI usage more for data analysis than data protection?
+Uh-huh see okay so today we learned um seems to be primarily using it for data analysis and not data protection which makes sense um advanced data processing enhanced decision making yikes um ah data protection here we go while ai does contribute to some aspects of data protection such data
+integrity through anomaly detection okay that's useful that would actually be good uh i actually just recently had a thing where i paid My taxes to Revenue Canada and I paid them at the bank and I accidentally paid them to RC0001 instead RVED0001.
+
+Speaker 01 - 15:52
+So one is for your T5s and the other one is actually for your taxes and so of course now I have to go through with Revenue Canada redirecting the payment and it's a perfect example of where AI should have caught this of like hey you know Kurt owes us money he gave us that amount of money But it went
+to this weird accounting code that, you know, it should have probably gone to this other accounting code and had a human, you know, review it and say he probably meant to pay his taxes, not his T5 or whatever thing, right?
+So, yeah, data anomaly detection.
+That's actually something AI is really good at.
+Sorry, just another ding.
+So blockchain for security.
+For the regulatory compliance, can you talk more about their use of AI for data?
+
+Speaker 01 - 16:49
+Can you tell us more in depth about how they do anomaly detection?
+Anomaly?
+It's my secret shame I never learned to spell or type.
+Oh, and let's regenerate.
+There we go.
+Okay.
+So it collects vast amounts of healthcare data, obviously, and then, ah, so I guess part of the premise is they're going collect a whole bunch of data that traditionally maybe wasn't collected and assembled because Well, what would you do with it, right?
+
+Speaker 01 - 17:34
+If you have humans looking at the data, you can't just hit them with phone book's worth of records.
+Um, so supervised learning, unsupervised learning, real time data monitoring, anomaly detection.
+Okay.
+Um, are there competitors to this company?
+Can you do web search, find three Find examples with names, links, and descriptions of how they communicate and verse like you.
+So the thing I've noticed with this is like, this is all stuff that, you know, you and I and other people can relatively easily do with Google searching, reading the content, summarizing it and understanding it.
+But, as you can see, it's probably faster to do with AI than to do it yourself.
+
+Speaker 01 - 18:38
+In some cases, have you heard of any of these companies with relation to BurstIQ?
+
+Speaker 02 - 18:49
+I have not, Kurt, that I can look at on the medical chain, no.
+Guard time, no.
+Patentory?
+Patientory?
+
+Speaker 01 - 18:58
+Yeah.
+Interesting.
+Oh, here, let's do this.
+Can you provide a matrix of interesting and of the most important aspects of each company's solutions?
+Use web search to find information, then display it I was a CSV formatted text file.
+And that's the other thing is I love using AI to spit out CSV files and JSON.
+Because then it's really easy, you know, to use the data.
+
+Speaker 01 - 19:46
+And I mean, obviously, CSV is beautiful, because you can shove it into a cell, which as we all know, is what runs the world, you know, is where all the data analysis happens.
+But here we go, blah, blah.
+Okay.
+Copy code, put it in Excel.
+And I'll dump this entire conversation into the GitHub repo so that people can access it, right?
+All right, give me Okay, let me just make the CSV file with this thing real quick.
+It drives me nuts that they have copy code, but not download as file.
+
+Speaker 01 - 20:24
+And you know, you can have to manually do
+Thank
+you.
+This is not great work, this is good junior level intern work.
+But we did, you know, just in 15 minutes.
+And so this is actually one of the things I am actually using AI a lot for is kind of instead of me going through Google, and trying find stuff and, you know, find comparables or related ones, just make chatgpt do And then, you know, spit the answers out in a CSV, because obviously, this is a lot
+easier to work with than a bunch of saved random web pages.
+
+Speaker 01 - 21:52
+Um, Patient health records, okay, we have engine, client, okay.
+Oh, ah, can you, let's ask it, can you decide what categories are important for these, please, and rank and give, can you decide, let's say five categories, five categories or traits, That are important for these companies and give each of these five, let's say, each of these five categories or
+traits a rating between zero and five.
+
+Speaker 03 - 22:41
+Kurt, this is Sanjay, your screen is not being shared for a prompt.
+
+Speaker 01 - 22:48
+Yeah, I'll, uh, I'm just gonna, uh, sorry, I'll do this and then I'll, uh, or actually it'll probably work better.
+Yeah.
+Right.
+You have to get your book with screens.
+It's one thing I don't like about zoom because if I hear my desktop, it's too big.
+Um, so here we go.
+So sharing this, so basically, uh, one thing I love doing is, and one thing AI seems good at is coming up with the tributes and then ranking them, you know, zero to five, zero to 10 and give me a justification for the answer.
+
+Speaker 01 - 23:17
+And the source text.
+So basically I'm asking it to, you know, come up five attributes or traits or whatever, rank them and then, oh, uh, nope, nope.
+Stop.
+Uh, and you provide, there we go.
+Um, but as you see, it came up with data security and drop patient control and access regulatory compliance, innovation, scalability, right?
+Those are all pretty plausible answers.
+Um, and here we go.
+
+Speaker 01 - 23:50
+Uh, oh, there we go.
+And yeah, as you can see, it's chewing away on it.
+Each one's taking a little longer now.
+But again, this is a this is a really great technique I've found for working with AI to work with data, which is essentially It might lie or get stuff wrong and so sort of two of the protections I use there are number one have justify its answer like explain to me the reasoning of your answer which
+you know may or may not be what it actually used but number two is also ideally provide the source text of the time it came from because that's you know then it makes my job easier because for example I can go and see if that source text exists or not And of course, you know, read it and see if it
+actually makes any sense, right?
+So it's just basically as a human, it's making my job a lot, it's making my job a lot simpler.
+
+Speaker 01 - 24:48
+Let's where did it go?
+Okay,
+there we go.
+So, okay, that's... Oh, okay, I didn't quite do it right here.
+I'm just going to change the prompt and have it redo the data.
+I want a justification for each category Along with the source text for each category.
+Again, in CSV outputs.
+
+Speaker 01 - 25:53
+As you can imagine, if you get the hang of these sort of techniques, it can save a ton of time, you know, from Google searching and doing kind of basic research, right?
+And so one question I have is what sort of research techniques or what kind of things do you all when you're kind of looking at these problems or trying to figure out if this is any good or not like what's your smell test or what's your kind of thing that you want or look for from these companies or
+products?
+So like when you as a human are looking for this, what kind of techniques or what strategies are you using to find this?
+And I want to, you know, and we'll see if we can maybe have the AI replicate that.
+
+Speaker 02 - 26:57
+lot of times Kurt, what I'm looking for is customer use cases that can validate what they're illustrating on their website.
+
+Speaker 01 - 27:07
+Right, the classic trust but verify.
+
+Speaker 02 - 27:13
+Absolutely.
+
+Speaker 01 - 27:16
+W3.
+Hang on second, because yeah, that would and you also add a column with a list customer news cases from page one.
+And a URL to the customer.
+Is there not?
+Yeah, there it Where'd it come from?
+Save us.
+Okay.
+
+Speaker 01 - 28:12
+This is generally what I end up using AI a lot for, is coming up with these columns, rating them, and then with the justification.
+It's doing the citations as the link off of the web page it would display, not the content.
+So I'll have to figure that out at some point.
+It was working a while ago when I was asking it this.
+And another challenge with this is that, you know, ChatGPT is constantly making changes to their system.
+And so you ask a question, you ask the exact same question a week later, and you get, you know, a vastly different, maybe lesser, maybe more useful output.
+But ignoring this get rid of these columns because they're useless delete here we go so yeah we basically have justification here um but unfortunately isn't easy to validate because we don't have the source but obviously knowing kind of like what what's ai used for justification it's easier to look
+
+Speaker 01 - 29:18
+at a web page to see if something is there then you know if you're basically starting with like i don't know what's there i don't know what i'm looking for And, you know, trying to synthesize it yourself, right?
+Like, basically, either the webpage is going to mention this or not, and that's going to be pretty obvious pretty quickly.
+So, let's see here, supported by major healthcare organizations.
+Oh, and on the customer use case, sorry, that is an answer there.
+It doesn't look like... Okay, so it did list... Okay, so it did list some stories, but the URLs to them are just to the main web page.
+So that's unfortunate, but we'll take a look at that.
+there we go.
+
+Speaker 01 - 30:14
+So here, customer cases.
+Yeah, I'll just
+and we're still seeing the one screen that you have for your csv export uh yep oh sorry it's not opening in the new one dang it okay oh sure hang on a sec oh i thought it was going to grab a new screen uh okay there we go we're working for it so sorry thank um so here we go so it grabbed the
+customer use cases but unfortunately only grabbed the main url um but again um Oh, here we go.
+Partnership with Mayo Clinic.
+So that should be easy to validate.
+So let's do here.
+
+Speaker 01 - 31:03
+So we'll just show it in the browser.
+I'm just going to share my little screen at some point.
+Let's figure out a way to get it smaller.
+Here we go.
+So if we do search here and Mayo Clinic.
+Well, there you go.
+So I guess the AI wasn't lying.
+
+Speaker 01 - 31:31
+They actually did announce a joint working agreement with the mayor.
+So obviously that, from a validation perspective, is a pretty good signal.
+
+Speaker 02 - 31:41
+Yeah, that's a very good signal, in my opinion.
+That would show, you know, what they're putting out there is actually relevant to the real world.
+
+Speaker 01 - 31:53
+And write a quick bio of Who they are and if they are qualified run company or not, provide a specific page for your answer.
+See, what I love about this AI stuff is instead of like spending time chasing down a rabbit hole, you just ask the AI and make it chase down the rabbit hole, you know, read the web page.
+Uh, here we go.
+And again, this would be all, you know, relatively easy stuff to validate or not, like, did they go to the Imperial College of London or not?
+You know, did they get a medical degree in 2011 or not?
+Blah, blah, blah.
+Hospital.
+
+Speaker 01 - 32:43
+Oh, interesting.
+See, like, we would have eventually found this, but the AI found it quite quickly.
+So if this is correct, to address inefficiencies in hospital discharge summaries, Um, led to the work in medicine training.
+Okay, so classic, he's wanted a problem and then made a startup to address Um, medical chain developed.
+Oh, wow.
+So I have a thing that's actually being sold.
+Myclinic telemedicine platform.
+
+Speaker 01 - 33:13
+I've never heard of that.
+Wow.
+Okay.
+Oh wait,
+sorry, I should have added the AI to it.
+Can you search for any controversy or bad reviews or problems with my clinic telemedicine?
+And that's one of my other favorite things to do is look for not just the good, but to look for the bad.
+
+Speaker 01 - 33:58
+Because a perfect example is there's a local restaurant that I like, and they have one star review.
+And the review is complaining that the rest like that the company would not take their tires back.
+And so of course, the response from the restaurant is sir, we're a restaurant, not a tire store.
+And there is a tire store across the street from them.
+So I think somebody, you know, whiffed their one star review.
+But ah, here we go.
+Interesting.
+
+Speaker 01 - 34:29
+So it kind of whiffed on question, it focused on him.
+Interesting.
+Okay, no.
+Focus on myclinic telemedicine.
+Can you search for any fundversity batteries?
+Okay.
+And that's the other thing.
+
+Speaker 01 - 34:50
+Sometimes the AI gets a bit Stuck in its context like so gets you know focuses on the doctor and not the thing we actually want to uh to hear about interesting uh okay well that's not super uh can you with more on and impactful problems like Bad outcomes or diagnoses.
+But as you can see, like this is a, you can change some of these rabbit holes pretty quick, you know, and sort of see if they're legit or not.
+And then again, like validated.
+And again, you can also use AI to validate these things.
+And like I said, part of the goal here is to kind build A framework so that, you know, the AI can kind back and forth and chase down all these things.
+You know, so that we basically can just sit and read the output and, you know, knowing that it's reasonably correct.
+Interesting.
+
+Speaker 01 - 36:07
+Here we go.
+So yeah, some potential bad outcomes due to remote consultations, blah, blah.
+Going back to John, do you want to go back to BurstIQ?
+
+Speaker 02 - 36:20
+Where was Yeah, let's try that.
+But I like your strategy here, Kurt.
+I think, you know, looking the positive and the negative side of the company, you get a better full picture of what's going on.
+
+Speaker 01 - 36:37
+Well, to be quite, like, part of it, too, is to see how people complain about the company or, you know, if they do at all, because Like if they have no complaints, then you know, it's that's a bit suspect, like do they have zero customers?
+Or have they, you know, very aggressively legally threatened people who leave bad reviews, you know, things like that, right?
+Oh, here we go.
+Interesting.
+Um, so this health IT today, I guess, did an article on them.
+Okay, so first, like, okay, here we go.
+We're all in search for that.
+
+Speaker 01 - 37:18
+The other thing that's interesting to me about Bursts like you, so they do this patient data, blockchain and stuff, but they're also clearly, in general, getting into medical data, like as a whole, which I think is probably a good sign, but they're not just a one hit wonder.
+
+Speaker 02 - 37:31
+Can do a deep dive on
+
+Speaker 01 - 37:48
+And then like I said, one thing you can do is with all of this is have the AI spit it out as a, know, giant CSV file, which of course then, you know, if you have 10 or 20 or 100 of these, makes it a lot easier to sort of call, you know, the bottom ones or to see the top ones, or, you know, depending
+on what your criteria are to, you know, get rid of certain ones.
+Because I mean, as we all know, part of the problem in today's world is, you know, there's, you have a problem and there's like 7 million possible solutions.
+Which one do you pick, right?
+
+Speaker 02 - 38:24
+Yeah, that's correct.
+
+Speaker 01 - 38:29
+One thing I'm kind of grateful for in cloud, we got three cloud providers, you know, that really matter.
+And so it's not as hard to pick one.
+But like when it comes to email providers, I have to tear my hair out because they're, you know, there's so many and they all have problems.
+So okay, seems like a pretty normal business-y person.
+Would
+you recommend virtual IQ or not?
+Let's just ask it a really of open-ended question because I'm curious to see what it says.
+
+Speaker 01 - 39:17
+Classic AI, it's kind of waffling and giving you pros and cons, but not spitting out an exact answer.
+
+Speaker 02 - 39:26
+Yeah, I've noticed that before too, Kurt, where it always gives you the pros and cons as the default answer when you're asking.
+
+Speaker 01 - 39:32
+Oh, it actually came to a conclusion!
+
+Multiple speakers - 39:34
+Well, huzzah!
+
+Speaker 01 - 39:37
+Yeah, I'm so used to it just being waffling, it's like, just pick one, you know, peanut butter, jam or jelly.
+It's like, oh, you know, both are good and blah blah.
+So it actually came up with a recommendation.
+Complexity, yeah, probably a thing that'll happen.
+Oh, and I like that it's got some links to Product Hunt.
+What the hell Product I've never heard of this.
+Has anybody ever heard of Product Hunt before?
+
+Speaker 01 - 40:05
+Huh.
+Well, that was not helpful.
+I think it's confabulating.
+Okay, well, let's, why did you list, Robert?
+That's
+the other thing I've noticed with AI is if you probe it on something like a bad source or whatever, will quite often apologize or come up with the right thing.
+First I can use life graph.
+
+Speaker 01 - 40:44
+okay.
+First IQ.
+Oh, okay.
+So their search bar is completely useless.
+Okay.
+Well, anyways, here we go.
+Lifecraft from first IQ.
+
+Speaker 01 - 40:57
+Blockchain services to drive health, da da.
+Recent launches.
+Interesting.
+Okay.
+One thing I would like to see is when did they pull this in?
+Oh, here we go.
+One review from 2022. Okay, so it's been around for a few years at least, that's interesting as well.
+
+Speaker 01 - 41:20
+Do you have any other questions about Burst IQ or about their stuff in general?
+
+Speaker 02 - 41:30
+lot of times I'll look at the funding as well for a company.
+
+Multiple speakers - 41:33
+Oh, yes!
+
+Speaker 01 - 41:35
+The funding model and revenue model for Burst IQ.
+Yeah, that's a good point.
+Actually, a friend of mine that's actually on the CSA's vendor evaluation checklist now is I look essentially, does the vendor have revenue or are they like burning up their runway?
+You know, because we've had that where, well, I'll pick on Airtable.
+Airtable is valued at like some absurd $11 billion valuation, but like clearly doesn't have enough customers to have that valuation and they're kind of burning through their funding.
+And you know, it's, they'll probably survive, but You know, it doesn't, it's not great, right?
+Versus Microsoft where, you know, they're making money hand over fist and they'll be around for a million years, right?
+
+Speaker 01 - 42:21
+So here we go.
+Okay.
+Funding raised a total of 11. Most recent funding round was in June 2022 when they raised, that's 610 grand?
+What?
+Did anybody ever find that odd that they raised 11 million total, but 600 grand in the last round?
+
+Speaker 02 - 42:46
+That's weird.
+Based on their profitability, though, too.
+Maybe they didn't burn through all that 11 million and 600 was just supportive round for growth.
+
+Speaker 01 - 42:57
+Yeah.
+Well, but I mean, 600 grand is like, I'm not gonna say you can put that on a credit card, but you know what I mean, right?
+600 grand is not a big sum of money.
+But anyway, so back to this first IQ charges, blah, blah.
+Um,
+I guess maybe that yeah, they're publicly held, they'd have to be SEC filings.
+And that's the other thing is you can see, I don't know if it showed on the share, but it did a search and it was like modifying the search.
+
+Speaker 01 - 43:38
+Like first it did the search for, you know, burst IQ, SEC revenue filings, and then it did burst SEC, or sorry, burst filings revenue site, sec.gov.
+And so it actually, the one thing I love about the AI is it's kind of humanistic in how it does the web search, just where it'll do a web search and go, oh, a lot of this is coming up like sec.gov.
+I'm just gonna go look there, right?
+And does things like that.
+Oh, no, that's the same answer, basically.
+Ah, has filed with ASCE, for example, offerings and securities.
+Oh, so they're still privately held.
+
+Speaker 01 - 44:10
+Okay, so that's not helpful.
+Okay, so yeah, they're not publicly held yet.
+Is there any news or noise about a diverse IU doing an IPO?
+Okay, so it's just kind of stuck in a loop now.
+It's not getting anything terrible or new.
+Um, I think they did get their sock too.
+So that's a that's a good sign for maturity, right?
+
+Speaker 01 - 45:00
+Like, if you can't get a sock too, then there's probably a problem.
+
+Speaker 02 - 45:03
+Yeah, absolutely.
+
+Speaker 01 - 45:06
+putting your pants on in the morning, but it's a good sign.
+Um, okay, interesting.
+Does anybody else have any sort things or types of things they would want to see or that they would look for?
+We covered funding, which is a good one.
+Some of their revenue.
+Oh, I know.
+that is taking a while.
+
+Speaker 01 - 45:57
+Oh, there we go.
+Oh,
+okay.
+I've never heard of any of these.
+Data exchange into blink help paths.
+Huh, interesting.
+So yeah, as you can see, the AI can, you know, kind at a junior analyst level, at least with the prompt I've given it and technology you currently have, you know, can grind through quite a bit of data quite quickly and summarize and, well, essentially do a lot of legwork, right?
+
+Speaker 02 - 46:53
+Absolutely.
+
+Speaker 01 - 46:58
+Um, so yeah, like I said, I'm gonna, I'll save this to the Git repo.
+Basically, I'll put all this in the Git repo.
+Um, and then, like I said, part of this right now is sort of just doing these exploratory things.
+Um, if anybody has sort of specific things they want to look for specific techniques they want or use, please let me know.
+Because like I said, one of the goals is to actually build a An agent where you basically feed it a company name, for example, and it would a few minutes later spit out a report covering that company, their comparables, their revenue, their partnerships, their products, their complaints, the
+highlights, the lowlights and all that.
+Or conversely, let you look for A topic or something and, you know, and find the companies related to that.
+
+Speaker 01 - 47:56
+Like I said, one of the biggest problems I have at the CSA is outside of a couple you know, big industries, like what do you go to for like email and file, you know, online collaboration?
+Well, the answer is Google and Microsoft generally, you know, but like if I need an email provider, like, oh, my goodness, there's, you know, hundreds of right?
+And they all kind look the same.
+But obviously, some of them are terrible.
+Some of them are great.
+Most of them are in the middle somewhere.
+And same thing with this AI blockchain stuff, right?
+
+Speaker 01 - 48:20
+We're seeing a lot of Some of these are obviously scams and some of these like the first like you actually I would say passes the initial smell test and doesn't look like a scam and you know might be real.
+
+Speaker 02 - 48:35
+Yeah I know they're a real company and they're doing real work Kurt and I know the team over there so yeah that all checks out according to what I know about Cool.
+
+Speaker 01 - 48:46
+I'm curious has this shown you anything new or any surprises?
+
+Speaker 02 - 48:52
+I think the main thing is just understanding more about their partnerships and also understanding their funding.
+I think those are two things that are new to me, I haven't really jumped into research from either.
+
+Speaker 01 - 49:06
+Are there any other things you'd want to look for or any other concerns areas interest Because part of it is like I'm not a business analyst, like I don't even begin to, like I literally, what I know about business analysts I learned from ChatGPT and like reading a Wikipedia page.
+And that's part of the other thing I love about this is like I'm a total non-expert in this and yet I can do sort of useful interesting things.
+Because I certainly don't have access to a business analyst, you I can't pay one a couple hundred bucks an hour to do this.
+
+Speaker 02 - 49:45
+The only other thing I'd look at would be staffing changes, if there's a dramatic turnover at the top and or if there's a lot additional people that have either been hired or laid
+
+Speaker 01 - 50:02
+That's actually a good one because that's actually we had that happen with a vendor where in eight or nine month period the vendor laid off what was 50 something percent of their staff And yeah, that's kind of a sign to make sure your data is backed Oh, okay.
+Okay, reinstable.
+Have there been any announcements of new higher numbers?
+you.
+Okay.
+Oh, interesting.
+2024 Gardener Market Guide for Health Data Management Platforms.
+
+Speaker 01 - 51:22
+Okay.
+There's a good example.
+So we just want to go ahead.
+Can you search for AI blockchain companies doing help and list their main URL and description?
+And it might not have found anything.
+Or it might have broken.
+I actually want to see if this is real or not or did it just make it Oh, there go.
+
+Speaker 01 - 52:46
+Okay, so that's legit.
+Interesting.
+So they're letting the AI... The AIs, like Googlebot, have access to stuff that you and I don't unless we pay for it, right?
+Because everybody wants their site indexed by the bots.
+But, you know, obviously they don't want to let people like me just read the report for free.
+So yeah.
+So like I said, I'll post the meeting minutes and I'll post this whole kind discussion conversation, whatever you want to call this thing with the AI, into the GitHub.
+
+Speaker 01 - 53:29
+And circle.
+And like I said, part of the goal is to actually like more fully automate this.
+So that, you know, yeah, you can basically just come back to a spreadsheet with some data that's useful.
+Does anybody have any comments or questions or concerns before we end the meeting?
+
+Speaker 02 - 53:50
+No, great job, Kurt.
+Very informative.
+And you did a wonderful job of running through everything.
+
+Speaker 03 - 53:59
+Yes, thank you.
+Okay,
+
+Speaker 01 - 54:08
+thanks everybody.
+I guess with that then will end the meeting for everybody.
+Thank you for coming.
+
