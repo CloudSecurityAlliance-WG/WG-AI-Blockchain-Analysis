@@ -9,7 +9,7 @@ There are a number of chatbots/GPTs/etc, the personas and prompts are stored her
 
 ## GPTs
 
-https://chat.openai.com/g/g-Y1eGYxuog-csa-technical-business-analyst-for-ai-blockchain
+[https://chat.openai.com/g/g-Y1eGYxuog-csa-technical-business-analyst-for-ai-blockchain](https://chatgpt.com/g/g-WXusGWCFv-csa-ai-blockchain-technical-analyst-v2)
 
 prompts/CSA Technical Business Analyst for AI-Blockchain/
 
